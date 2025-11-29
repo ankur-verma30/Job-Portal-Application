@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.1.17",
     "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
+    "lightningcss": "^1.30.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-fast-marquee": "^1.6.5",
