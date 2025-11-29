@@ -1,6 +1,6 @@
 import { Avatar, Indicator } from "@mantine/core"
 import { IconAnchor, IconBell, IconSettings } from "@tabler/icons-react"
-import AvatarLogo from "../assets/JobPortalResources/avatar.png";
+import AvatarLogo from "/JobPortalResources/avatar.png";
 import NavLinks from "./NavLinks";
 
 const Header = () => {

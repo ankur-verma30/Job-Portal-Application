@@ -1,10 +1,6 @@
 import { Avatar, AvatarGroup, TextInput } from "@mantine/core"
-import boyImage from "../assets/JobPortalResources/Boy.png"
+import boyImage from "/JobPortalResources/Boy.png"
 import { IconSearch } from "@tabler/icons-react"
-import Avatar1 from "../assets/JobPortalResources/avatar1.png"
-import Avatar2 from "../assets/JobPortalResources/avatar2.png"
-import Avatar3 from "../assets/JobPortalResources/avatar.png"
-import Google  from "../assets/JobPortalResources/Icons/google.png"
 const DreamJob = () => {
     return (
         <div className="flex items-center px-16 ">
@@ -35,9 +31,9 @@ const DreamJob = () => {
                         <div className="absolute -right-10 w-fit top-[50%] border-bright-sun-400 border rounded-lg p-2 backdrop-blur-md ">
                             <div className="text-center text-mine-shaft-100 mb-1 text-sm">10k+ got job</div>
                             <AvatarGroup>
-                                <Avatar src={Avatar1}/>
-                                <Avatar src={Avatar2}/>
-                                <Avatar src={Avatar3}/>
+                                <Avatar src="/JobPortalResources/avatar1.png"/>
+                                <Avatar src="/JobPortalResources/avatar2.png"/>
+                                <Avatar src='/JobPortalResources/avatar.png'/>
                                 <Avatar>+9k</Avatar>
                             </AvatarGroup>
                         </div>
@@ -46,7 +42,7 @@ const DreamJob = () => {
                             <div className="flex gap-2 items-center">
                                 {/* image section */}
                                 <div className="w-10 h-10 p-1 bg-mine-shaft-900 rounded-lg">
-                                    <img src={Google} alt="google" />
+                                    <img src="/JobPortalResources/Icons/Google.png" alt="google" />
                                 </div>
                                 {/* text section */}
                                 <div className="text-sm text-mine-shaft-100">
