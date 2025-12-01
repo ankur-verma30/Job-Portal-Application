@@ -6,6 +6,8 @@ import '@mantine/carousel/styles.css';
 import FindJobs from './Pages/FindJobs';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import FindTalent from './Pages/FindTalent';
+import TalentProfile from './Pages/TalentProfile';
 
 const App = () => {
   const theme = createTheme({
@@ -21,6 +23,8 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path="/find-jobs" element={<FindJobs/>}/>
+        <Route path='/find-talent' element={<FindTalent/>}/>
+        <Route path='/talent-profile' element={<TalentProfile/>}/>
         <Route path='*' element={<HomePage />} /> 
       </Routes>
       <Footer/>
