@@ -11,6 +11,8 @@ import FindTalent from './Pages/FindTalent';
 import TalentProfile from './Pages/TalentProfile';
 import PostJobPage from './Pages/PostJobPage';
 import JobDescription from './Pages/JobDescription';
+import ApplyJob from './Pages/ApplyJob';
+import CompanyPage from './Pages/CompanyPage';
 
 const App = () => {
   const theme = createTheme({
@@ -26,16 +28,21 @@ const App = () => {
   return (
     <MantineProvider theme={theme} defaultColorScheme='dark' >
       <BrowserRouter>
+      <div className='relative '>
         <Header />
         <Routes>
           <Route path="/find-jobs" element={<FindJobs />} />
           <Route path='/find-talent' element={<FindTalent />} />
           <Route path='/talent-profile' element={<TalentProfile />} />
+
           <Route path='/post-job' element={< PostJobPage />} />
           <Route path ='/jobs' element={<JobDescription />} />
+          <Route path="/apply-job" element={<ApplyJob />} />
+          <Route path='/company' element={<CompanyPage />} />
           <Route path='*' element={<HomePage />} />
         </Routes>
         <Footer />
+        </div>
       </BrowserRouter>
     </MantineProvider>
   )

@@ -57,7 +57,7 @@ const JobDesc = (props: any) => {
                 <div className="text-xl font-semibold mb-5">
                     About Company
                 </div>
-                <div className="flex justify-between ">
+                <div className="flex justify-between mb-3">
                     <div className="flex gap-2 items-center">
                         <div className="p-3 bg-mine-shaft-800 rounded-xl">
                             <img className="h-8 " src={`/JobPortalResources/Icons/${props.company}.png`} alt="" />
@@ -67,12 +67,13 @@ const JobDesc = (props: any) => {
                             <div className="text-base text-mine-shaft-300 ">10k+ Employees</div>
                         </div>
                     </div>
-                        <Link to="">
-                            <Button color="brightSun.4" size="sm" variant="light">Company Page</Button>
+                        <Link to="/company">
+                            <Button color="brightSun.4" variant="light">Company Profile</Button>
                         </Link>
                     </div>
-                    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur asperiores fuga, dolore ipsum necessitatibus eaque quia modi sunt pariatur in quos rerum distinctio odit quod voluptatum. Culpa praesentium nobis modi, harum tenetur placeat aspernatur?</div>
+                    <div className="text-mine-shaft-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur asperiores fuga, dolore ipsum necessitatibus eaque quia modi sunt pariatur in quos rerum distinctio odit quod voluptatum. Culpa praesentium nobis modi, harum tenetur placeat aspernatur?</div>
                 </div>
+
             </div>
     )
 }
