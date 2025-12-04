@@ -1,7 +1,7 @@
 import { Button, Divider } from "@mantine/core"
 import { IconBriefcase, IconMapPin } from "@tabler/icons-react"
-import ExperienceCard from "../Profile/ExperienceCard"
-import CertificationsCard from "../Profile/CertificationsCard"
+import CertificationsCard from "./CertificationsCard"
+import ExperienceCard from "./ExperienceCard"
 
 const Profile = (props: any) => {
     return (
