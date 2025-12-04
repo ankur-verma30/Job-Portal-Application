@@ -1,7 +1,6 @@
 import { Button, Select, TagsInput } from "@mantine/core"
 import { fields } from "../Data/PostJob"
 import RichEditor from "./RichEditor"
-import { IconArrowLeft } from "@tabler/icons-react"
 
 const PostJobs = () => {
     const select = fields

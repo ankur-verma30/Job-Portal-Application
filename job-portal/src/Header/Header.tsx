@@ -1,13 +1,15 @@
-import { Avatar, Indicator } from "@mantine/core"
+import { Indicator } from "@mantine/core"
 import { IconAnchor, IconBell, IconSettings } from "@tabler/icons-react"
-import AvatarLogo from "/JobPortalResources/avatar.png";
 import NavLinks from "./NavLinks";
+import { useLocation } from "react-router-dom";
+import ProfileMenuComponent from "./ProfileMenuComponent";
 
 const Header = () => {
+  const location=useLocation();
   return (
-    <div className="w-full bg-mine-shaft-950 text-white h-20 flex justify-between px-6 items-center font-['poppins']">
+    location.pathname!=='/sign-up' && location.pathname!=='/login' &&<div className="w-full bg-mine-shaft-950 text-white h-20 flex justify-between px-6 items-center font-['poppins']">
       {/* logo section */}
-      <div className="flex gap-1 items-center text-bright-sun-400">
+      <div className="flex gap-1  items-center text-bright-sun-400">
         <IconAnchor className="h-8 w-8" stroke={2.5} />
         <div className="text-3xl font-semibold   ">JobHook</div>
       </div>
@@ -15,12 +17,8 @@ const Header = () => {
       {NavLinks()}
       {/* profile section */}
       <div className="flex gap-3 items-center">
-        <div className="flex items-center gap-2">
-          <div>
-            Ankur
-          </div>
-          <Avatar src={AvatarLogo} alt="it's me" />
-        </div>
+       
+        <ProfileMenuComponent/>
         <div className="bg-mine-shaft-900 p-1.5 rounded-full">
           <IconSettings stroke={1.5} />
         </div>
